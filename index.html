@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Collection Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Assets/fevicon.ico">
+</head>
+<body>
+  <div class="click-challenge">
+    <h1>BITCOIN COLLECTION CHALLENGE</h1>
+    <h2 id="timerDisplay">Time left: 60 seconds</h2>
+    <p>Collect as many Bitcoins as you can before time runs out!</p>
+    <div id="count" class="score">0</div>
+    <img id="counterButton" src="Assets/bitcoin.png" alt="Bitcoin Icon">
+    <button id="resetButton">START OVER</button>
+  </div>
+
+  <!-- Game Over Modal -->
+  <div id="gameOverModal" class="modal">
+    <div class="modal-content">
+      <h2>Time's Up!</h2>
+      <p id="finalScore">You’ve collected [score] Bitcoins!</p>
+      <button id="closeModalButton">TRY AGAIN</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
